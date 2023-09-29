@@ -1,0 +1,9 @@
+<network-security-config>    
+  <base-config cleartextTrafficPermitted="true">
+    <trust-anchors> 
+      <!-- Allow User installed And System Default CA Certificates for all domains -->
+      <certificates src="user"/>
+      <certificates src="system"/>
+    </trust-anchors>    
+  </base-config>
+</network-security-config>
