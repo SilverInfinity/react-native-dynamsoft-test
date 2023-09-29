@@ -81,6 +81,9 @@ android {
 repositories {
   mavenCentral()
   google()
+  maven {
+    url "https://download2.dynamsoft.com/maven/aar"
+  }
 }
 
 
@@ -89,6 +92,10 @@ dependencies {
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
+  implementation 'com.dynamsoft:dynamsoftcapturevisionrouter:2.0.10'
+  implementation 'com.dynamsoft:dynamsoftdocumentnormalizer:2.0.10'
+  implementation 'com.dynamsoft:dynamsoftcameraenhancer:4.0.0'
+  implementation 'com.dynamsoft:dynamsoftutility:1.0.10'
 }
 
 if (isNewArchitectureEnabled()) {
