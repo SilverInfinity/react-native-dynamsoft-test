@@ -1,4 +1,10 @@
-import { NativeModules, Platform } from 'react-native';
+// @ts-nocheck
+import {
+  NativeModules,
+  Platform,
+  requireNativeComponent,
+  UIManager,
+} from 'react-native';
 
 const LINKING_ERROR =
   `The package 'react-native-dynasoft' doesn't seem to be linked. Make sure: \n\n` +
@@ -17,6 +23,20 @@ const DynasoftBridge = NativeModules.DynasoftBridge
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
+const DynasoftViewManager = 'DynasoftViewManager';
+
+export const DynasoftView =
+  UIManager.getViewManagerConfig(DynasoftViewManager) != null
+    ? requireNativeComponent(DynasoftViewManager)
+    : () => {
+        throw new Error(LINKING_ERROR);
+      };
+
+function multiply(a, b) {
   return DynasoftBridge.multiply(a, b);
 }
+
+export default {
+  multiply,
+  setLicenceKey: DynasoftBridge.setLicenceKey,
+};
