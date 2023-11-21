@@ -33,7 +33,7 @@
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepack": "bob build",
     "release": "release-it",
-    "example": "yarn workspace react-native-dynasoft-example"
+    "example": "yarn workspace react-native-dynasoft-example2"
   },
   "keywords": [
     "react-native",

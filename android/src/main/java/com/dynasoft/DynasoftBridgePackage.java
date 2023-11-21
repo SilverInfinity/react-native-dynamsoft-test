@@ -25,10 +25,7 @@ public class DynasoftBridgePackage implements ReactPackage {
 
   @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-    return Arrays.<ViewManager>asList(
-      // new DCECameraViewManager(),
-      new DynasoftViewManager()
-      );
+      return Collections.emptyList();
   }
 
 }

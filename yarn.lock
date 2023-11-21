@@ -10887,9 +10887,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-dynasoft-example@workspace:example":
+"react-native-dynasoft-example2@workspace:example":
   version: 0.0.0-use.local
-  resolution: "react-native-dynasoft-example@workspace:example"
+  resolution: "react-native-dynasoft-example2@workspace:example"
   dependencies:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0

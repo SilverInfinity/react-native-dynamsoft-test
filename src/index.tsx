@@ -23,15 +23,6 @@ const DynasoftBridge = NativeModules.DynasoftBridge
       }
     );
 
-const DynasoftViewManager = 'DynasoftViewManager';
-
-export const DynasoftView =
-  UIManager.getViewManagerConfig(DynasoftViewManager) != null
-    ? requireNativeComponent(DynasoftViewManager)
-    : () => {
-        throw new Error(LINKING_ERROR);
-      };
-
 function multiply(a, b) {
   return DynasoftBridge.multiply(a, b);
 }
@@ -39,4 +30,5 @@ function multiply(a, b) {
 export default {
   multiply,
   setLicenceKey: DynasoftBridge.setLicenceKey,
+  scanWithConfiguration: DynasoftBridge.scanWithConfiguration,
 };
