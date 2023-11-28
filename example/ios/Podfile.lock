@@ -2,6 +2,24 @@ PODS:
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
+  - DynamsoftCameraEnhancer (4.0.0):
+    - DynamsoftCore (= 3.0.10)
+    - DynamsoftLicense (= 3.0.10)
+  - DynamsoftCaptureVisionRouter (2.0.10):
+    - DynamsoftCore (= 3.0.10)
+    - DynamsoftLicense (= 3.0.10)
+  - DynamsoftCore (3.0.10)
+  - DynamsoftDocumentNormalizer (2.0.10):
+    - DynamsoftCore (= 3.0.10)
+    - DynamsoftImageProcessing (= 2.0.10)
+    - DynamsoftLicense (= 3.0.10)
+  - DynamsoftImageProcessing (2.0.10):
+    - DynamsoftCore (= 3.0.10)
+  - DynamsoftLicense (3.0.10)
+  - DynamsoftUtility (1.0.10):
+    - DynamsoftCore (= 3.0.10)
+    - DynamsoftImageProcessing (= 2.0.10)
+    - DynamsoftLicense (= 3.0.10)
   - FBLazyVector (0.72.5)
   - FBReactNativeSpec (0.72.5):
     - RCT-Folly (= 2021.07.22.00)
@@ -376,6 +394,10 @@ PODS:
   - React-logger (0.72.5):
     - glog
   - react-native-dynasoft (0.1.0):
+    - DynamsoftCameraEnhancer (= 4.0.0)
+    - DynamsoftCaptureVisionRouter (= 2.0.10)
+    - DynamsoftDocumentNormalizer (= 2.0.10)
+    - DynamsoftUtility (= 1.0.10)
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - React-NativeModulesApple (0.72.5):
@@ -562,6 +584,13 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - CocoaAsyncSocket
+    - DynamsoftCameraEnhancer
+    - DynamsoftCaptureVisionRouter
+    - DynamsoftCore
+    - DynamsoftDocumentNormalizer
+    - DynamsoftImageProcessing
+    - DynamsoftLicense
+    - DynamsoftUtility
     - Flipper
     - Flipper-Boost-iOSX
     - Flipper-DoubleConversion
@@ -663,6 +692,13 @@ SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
+  DynamsoftCameraEnhancer: ba418932667beecdbd960755d9bdc8a87724a69c
+  DynamsoftCaptureVisionRouter: 2752c407b1ace69c5fa2f276127613d87c4683ee
+  DynamsoftCore: 997834ca7a8931e9a1c4f3edede7284e89b5c37d
+  DynamsoftDocumentNormalizer: 0bac28f5572e3ffb591b685a359025232a737413
+  DynamsoftImageProcessing: 76e924c512af3d039203d2cbf0db8129806eb176
+  DynamsoftLicense: 1a6454427ca6761b756dc0c472d603e7468319d7
+  DynamsoftUtility: 341f4b3890c1ea347ddb2fef402d722255585952
   FBLazyVector: 71803c074f6325f10b5ec891c443b6bbabef0ca7
   FBReactNativeSpec: 448e08a759d29a96e15725ae532445bf4343567c
   Flipper: 6edb735e6c3e332975d1b17956bcc584eccf5818
@@ -693,7 +729,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: ff70a72027dea5cc7d71cfcc6fad7f599f63987a
   React-jsinspector: aef73cbd43b70675f572214d10fa438c89bf11ba
   React-logger: 2e4aee3e11b3ec4fa6cfd8004610bbb3b8d6cca4
-  react-native-dynasoft: fd6372b5b191df2e7460cf67433bb246a32d274f
+  react-native-dynasoft: bed281237941c535b053663ea1f4573004f06797
   React-NativeModulesApple: 797bc6078d566eef3fb3f74127e6e1d2e945a15f
   React-perflogger: cd8886513f68e1c135a1e79d20575c6489641597
   React-RCTActionSheet: 726d2615ca62a77ce3e2c13d87f65379cdc73498
