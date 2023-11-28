@@ -1,10 +1,5 @@
 // @ts-nocheck
-import {
-  NativeModules,
-  Platform,
-  requireNativeComponent,
-  UIManager,
-} from 'react-native';
+import { NativeModules, Platform } from 'react-native';
 
 const LINKING_ERROR =
   `The package 'react-native-dynasoft' doesn't seem to be linked. Make sure: \n\n` +
@@ -27,8 +22,19 @@ function multiply(a, b) {
   return DynasoftBridge.multiply(a, b);
 }
 
+function setLicenceKey(licenseKey) {
+  return DynasoftBridge.setLicenceKey(licenseKey);
+}
+
+function scanWithConfiguration(options) {
+  if (Platform.OS === 'ios') {
+    throw new Error('scanWithConfiguration is not implemented for iOS');
+  }
+  DynasoftBridge.scanWithConfiguration(options);
+}
+
 export default {
   multiply,
-  setLicenceKey: DynasoftBridge.setLicenceKey,
-  scanWithConfiguration: DynasoftBridge.scanWithConfiguration,
+  setLicenceKey,
+  scanWithConfiguration,
 };
