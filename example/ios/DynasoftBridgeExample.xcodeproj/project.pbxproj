@@ -486,6 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z36K9KM8WZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DynasoftBridgeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,6 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z36K9KM8WZ;
 				INFOPLIST_FILE = DynasoftBridgeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,7 +604,10 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					" ",
+					"-Wl",
+					"-ld_classic",
+					"-Wl",
+					"-ld_classic",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
@@ -676,7 +681,10 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					" ",
+					"-Wl",
+					"-ld_classic",
+					"-Wl",
+					"-ld_classic",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";

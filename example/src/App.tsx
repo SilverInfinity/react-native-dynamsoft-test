@@ -1,8 +1,18 @@
 // @ts-nocheck
+
+// figure out how to log
 import * as React from 'react';
 
-import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
+import {
+  StyleSheet,
+  Platform,
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+} from 'react-native';
 import DynasoftBridge from 'react-native-dynasoft';
+import { launchCamera } from 'react-native-image-picker';
 
 const licenseKey = 'DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9';
 
@@ -23,10 +33,31 @@ export default function App() {
   }, []);
   const handlePress = React.useCallback(() => {
     console.log('scan start');
-    DynasoftBridge.scanWithConfiguration({}).then((result) => {
-      console.log('scan then', result);
-      setResult(result);
-    });
+    if (Platform.OS === 'android') {
+      DynasoftBridge.scanWithConfiguration({}).then((result) => {
+        console.log('scan then', result);
+        setResult(result);
+      });
+    } else {
+      // ios
+      launchCamera({}).then(async (result) => {
+        if (result.didCancel) {
+          console.log('user canceled');
+        } else if (result.errorCode) {
+          console.log('error thrown:', { ...result });
+        } else {
+          const originalUri = result.assets[0]?.uri;
+          try {
+            const normalizedUri = await DynasoftBridge.normalizeFromFile(
+              originalUri.replace('file://', '/')
+            );
+            setResult('file://' + normalizedUri);
+          } catch (error) {
+            console.log('CAUGHT ERROR!', { error });
+          }
+        }
+      });
+    }
   }, []);
 
   return (

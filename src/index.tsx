@@ -30,11 +30,19 @@ function scanWithConfiguration(options) {
   if (Platform.OS === 'ios') {
     throw new Error('scanWithConfiguration is not implemented for iOS');
   }
-  DynasoftBridge.scanWithConfiguration(options);
+  return DynasoftBridge.scanWithConfiguration(options);
+}
+
+function normalizeFromFile(uri) {
+  if (Platform.OS === 'android') {
+    throw new Error('scanWithConfiguration is not implemented for Android');
+  }
+  return DynasoftBridge.normalizeFromFile(uri);
 }
 
 export default {
   multiply,
   setLicenceKey,
   scanWithConfiguration,
+  normalizeFromFile,
 };
