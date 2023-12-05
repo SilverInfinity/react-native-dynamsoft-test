@@ -1,5 +1,5 @@
 {
-  "name": "react-native-dynasoft",
+  "name": "react-native-dynamsoft",
   "version": "0.1.0",
   "description": "na",
   "main": "lib/commonjs/index",
@@ -33,20 +33,20 @@
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepack": "bob build",
     "release": "release-it",
-    "example": "yarn workspace react-native-dynasoft-example2"
+    "example": "yarn workspace react-native-dynamsoft-example2"
   },
   "keywords": [
     "react-native",
     "ios",
     "android"
   ],
-  "repository": "https://github.com/SilverInfinity/react-native-dynasoft",
+  "repository": "https://github.com/SilverInfinity/react-native-dynamsoft",
   "author": "Alyssa McKee <alyssa.mckee@copart.com> (https://github.com/SilverInfinity)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SilverInfinity/react-native-dynasoft/issues"
+    "url": "https://github.com/SilverInfinity/react-native-dynamsoft/issues"
   },
-  "homepage": "https://github.com/SilverInfinity/react-native-dynasoft#readme",
+  "homepage": "https://github.com/SilverInfinity/react-native-dynamsoft#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

@@ -1,6 +1,6 @@
-package com.dynasoft.normalizer;
+package com.dynamsoft.normalizer;
 
-import com.dynasoft.R;
+import com.dynamsoft.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;

@@ -10894,9 +10894,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-dynasoft-example2@workspace:example":
+"react-native-dynamsoft-example2@workspace:example":
   version: 0.0.0-use.local
-  resolution: "react-native-dynasoft-example2@workspace:example"
+  resolution: "react-native-dynamsoft-example2@workspace:example"
   dependencies:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
@@ -10911,9 +10911,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-native-dynasoft@workspace:.":
+"react-native-dynamsoft@workspace:.":
   version: 0.0.0-use.local
-  resolution: "react-native-dynasoft@workspace:."
+  resolution: "react-native-dynamsoft@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.2.2

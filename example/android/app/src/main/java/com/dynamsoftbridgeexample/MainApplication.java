@@ -1,4 +1,4 @@
-package com.dynasoftbridgeexample;
+package com.dynamsoftbridgeexample;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

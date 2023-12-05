@@ -1,17 +1,17 @@
-# react-native-dynasoft
+# react-native-dynamsoft
 
 na
 
 ## Installation
 
 ```sh
-npm install react-native-dynasoft
+npm install react-native-dynamsoft
 ```
 
 ## Usage
 
 ```js
-import { multiply } from 'react-native-dynasoft';
+import { multiply } from 'react-native-dynamsoft';
 
 // ...
 

@@ -23,11 +23,11 @@ if (isNewArchitectureEnabled()) {
 }
 
 def getExtOrDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties["DynasoftBridge_" + name]
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties["DynamsoftBridge_" + name]
 }
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["DynasoftBridge_" + name]).toInteger()
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["DynamsoftBridge_" + name]).toInteger()
 }
 
 def supportsNamespace() {
@@ -45,7 +45,7 @@ def supportsNamespace() {
 
 android {
   if (supportsNamespace()) {
-    namespace "com.dynasoft"
+    namespace "com.dynamsoft"
 
     sourceSets {
       main {
@@ -101,7 +101,7 @@ dependencies {
 if (isNewArchitectureEnabled()) {
   react {
     jsRootDir = file("../src/")
-    libraryName = "DynasoftBridge"
-    codegenJavaPackageName = "com.dynasoft"
+    libraryName = "DynamsoftBridge"
+    codegenJavaPackageName = "com.dynamsoft"
   }
 }

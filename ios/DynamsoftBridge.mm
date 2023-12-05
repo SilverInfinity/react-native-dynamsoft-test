@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "DynasoftBridge.h"
+#import "DynamsoftBridge.h"
 #import <DynamsoftCore/DynamsoftCore.h>
 #import <DynamsoftLicense/DynamsoftLicense.h>
 #import <DynamsoftCameraEnhancer/DynamsoftCameraEnhancer.h>
@@ -7,11 +7,11 @@
 #import <DynamsoftImageProcessing/DynamsoftImageProcessing.h>
 #import <DynamsoftDocumentNormalizer/DynamsoftDocumentNormalizer.h>
 
-@interface DynasoftBridge() <DSLicenseVerificationListener>
+@interface DynamsoftBridge() <DSLicenseVerificationListener>
 
 @end
 
-@implementation DynasoftBridge
+@implementation DynamsoftBridge
 {
     RCTPromiseResolveBlock licenseResolve;
     RCTPromiseRejectBlock licenseReject;

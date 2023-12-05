@@ -393,7 +393,7 @@ PODS:
   - React-jsinspector (0.72.5)
   - React-logger (0.72.5):
     - glog
-  - react-native-dynasoft (0.1.0):
+  - react-native-dynamsoft (0.1.0):
     - DynamsoftCameraEnhancer (= 4.0.0)
     - DynamsoftCaptureVisionRouter (= 2.0.10)
     - DynamsoftDocumentNormalizer (= 2.0.10)
@@ -565,7 +565,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
-  - react-native-dynasoft (from `../..`)
+  - react-native-dynamsoft (from `../..`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -655,7 +655,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
-  react-native-dynasoft:
+  react-native-dynamsoft:
     :path: "../.."
   react-native-image-picker:
     :path: "../node_modules/react-native-image-picker"
@@ -739,7 +739,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: ff70a72027dea5cc7d71cfcc6fad7f599f63987a
   React-jsinspector: aef73cbd43b70675f572214d10fa438c89bf11ba
   React-logger: 2e4aee3e11b3ec4fa6cfd8004610bbb3b8d6cca4
-  react-native-dynasoft: bed281237941c535b053663ea1f4573004f06797
+  react-native-dynamsoft: b8b570701b8975d41e2a799ebe883fcc0d9a49ed
   react-native-image-picker: 2381c008bbb09e72395a2d043c147b11bd1523d9
   React-NativeModulesApple: 797bc6078d566eef3fb3f74127e6e1d2e945a15f
   React-perflogger: cd8886513f68e1c135a1e79d20575c6489641597
@@ -763,6 +763,6 @@ SPEC CHECKSUMS:
   Yoga: 86fed2e4d425ee4c6eab3813ba1791101ee153c6
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 96f0bada3c33a2c50be1deb40ff798625e1e7d8f
+PODFILE CHECKSUM: e5f34f7d2412b145c721f06bb054f3d25fbd3421
 
 COCOAPODS: 1.13.0

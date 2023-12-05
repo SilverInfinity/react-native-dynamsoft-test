@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.dynasoftbridgeexample"
+    namespace "com.dynamsoftbridgeexample"
     defaultConfig {
-        applicationId "com.dynasoftbridgeexample"
+        applicationId "com.dynamsoftbridgeexample"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

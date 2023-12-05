@@ -11,7 +11,7 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
-import DynasoftBridge from 'react-native-dynasoft';
+import DynamsoftBridge from 'react-native-dynamsoft';
 import { launchCamera } from 'react-native-image-picker';
 
 const licenseKey = 'DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9';
@@ -22,7 +22,7 @@ export default function App() {
   const [licensed, setLicenced] = React.useState(false);
   console.log('render', result);
   React.useEffect(() => {
-    DynasoftBridge.setLicenceKey(licenseKey)
+    DynamsoftBridge.setLicenceKey(licenseKey)
       .then((res) => {
         console.log('it returned!', res);
         setLicenced(res);
@@ -34,7 +34,7 @@ export default function App() {
   const handlePress = React.useCallback(() => {
     console.log('scan start');
     if (Platform.OS === 'android') {
-      DynasoftBridge.scanWithConfiguration({}).then((result) => {
+      DynamsoftBridge.scanWithConfiguration({}).then((result) => {
         console.log('scan then', result);
         setResult(result);
       });
@@ -48,7 +48,7 @@ export default function App() {
         } else {
           const originalUri = result.assets[0]?.uri;
           try {
-            const normalizedUri = await DynasoftBridge.normalizeFromFile(
+            const normalizedUri = await DynamsoftBridge.normalizeFromFile(
               originalUri.replace('file://', '/')
             );
             setResult('file://' + normalizedUri);

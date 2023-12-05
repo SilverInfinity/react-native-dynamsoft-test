@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  DynasoftBridgeExample
+//  DynamsoftBridgeExample
 //
 
 import Foundation

@@ -1,9 +1,9 @@
-package com.dynasoft;
+package com.dynamsoft;
 
 import com.dynamsoft.license.LicenseManager;
 
-import com.dynasoft.normalizer.NormalizerCameraActivity;
-import com.dynasoft.normalizer.ResultActivity;
+import com.dynamsoft.normalizer.NormalizerCameraActivity;
+import com.dynamsoft.normalizer.ResultActivity;
 
 import androidx.annotation.NonNull;
 import android.content.Intent;
@@ -14,10 +14,10 @@ import android.net.Uri;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.bridge.*;
 
-@ReactModule(name = DynasoftBridgeModule.NAME)
-public class DynasoftBridgeModule extends ReactContextBaseJavaModule {
-  public static final String NAME = "DynasoftBridge";
-  public static final String TAG = "DynasoftBridge";
+@ReactModule(name = DynamsoftBridgeModule.NAME)
+public class DynamsoftBridgeModule extends ReactContextBaseJavaModule {
+  public static final String NAME = "DynamsoftBridge";
+  public static final String TAG = "DynamsoftBridge";
   private final ReactApplicationContext reactContext;
   
   private Promise mScanPromise;
@@ -27,7 +27,7 @@ public class DynasoftBridgeModule extends ReactContextBaseJavaModule {
   private static final String E_NO_IMAGE_DATA_FOUND = "E_NO_IMAGE_DATA_FOUND";
   private static final String E_FILE_SAVE_FAILED = "E_FILE_SAVE_FAILED";
 
-  public DynasoftBridgeModule(ReactApplicationContext reactContext) {
+  public DynamsoftBridgeModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
     reactContext.addActivityEventListener(mActivityEventListener);

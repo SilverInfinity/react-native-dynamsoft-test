@@ -1,4 +1,4 @@
-package com.dynasoft;
+package com.dynamsoft;
 
 import androidx.annotation.NonNull;
 
@@ -14,12 +14,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class DynasoftBridgePackage implements ReactPackage {
+public class DynamsoftBridgePackage implements ReactPackage {
   
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
-    modules.add(new DynasoftBridgeModule(reactContext));
+    modules.add(new DynamsoftBridgeModule(reactContext));
     return modules;
   }
 
